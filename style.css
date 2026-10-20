@@ -1,0 +1,430 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f5;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    height: 115px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 65px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 10;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* LOGO */
+
+.logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    display: block;
+}
+
+/* LEFT NAVIGATION */
+
+.left-header {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    gap: 40px;
+}
+
+.left-header a {
+    text-decoration: none;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.left-header a:hover {
+    color: #26734d;
+}
+
+/* RIGHT SIDE */
+
+.right-header {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.right-header a {
+    text-decoration: none;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.right-header a:hover {
+    color: #26734d;
+}
+
+/* ================= BUTTONS ================= */
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+/* SIGN IN AND JOIN BUTTONS */
+
+.sign-in,
+.join {
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sign-in {
+    background-color: white;
+    color: black;
+    border: 1px solid #4b4a4a;
+}
+
+.join {
+    background-color: #18251e;
+    color: white;
+    border: 1px solid #18251e;
+}
+
+.sign-in:hover,
+.join:hover {
+    transform: scale(1.03);
+}
+
+
+/* ================= GREEN BAR ================= */
+
+.head-bar {
+    margin: 0 30px;
+    height: 110px;
+    background-color: #164f33;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.head-bar h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.head-bar button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 10px 18px;
+    font-size: 17px;
+}
+
+
+/* ================= HERO SECTION ================= */
+
+.hero {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* SECTION */
+
+.section-A {
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+
+
+/* ================= IMAGE ================= */
+
+.image-sectionA {
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.image-sectionA img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ================= TEXT ================= */
+
+.text-section {
+    width: 50%;
+    height: 400px;
+    background-color: #E5DDD2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+
+/* GREEN TEXT SECTION */
+
+.green-section {
+    background-color: #006241;
+    color: white;
+}
+
+
+/* HEADING */
+
+.text-section h2 {
+    color: #1b5137;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+
+/* GREEN HEADING */
+
+.green-section h2 {
+    color: white;
+}
+
+
+/* PARAGRAPH */
+
+.text-section p {
+    color: #1b5137;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    max-width: 450px;
+}
+
+
+/* GREEN PARAGRAPH */
+
+.green-section p {
+    color: white;
+}
+
+
+/* ================= SECTION BUTTON ================= */
+
+.text-section button {
+    margin-top: 15px;
+
+    padding: 10px 20px;
+
+    background-color: transparent;
+
+    color: #1b5137;
+
+    border: 1px solid #1b5137;
+
+    border-radius: 25px;
+
+    font-size: 16px;
+}
+
+
+/* GREEN BUTTON */
+
+.green-section button {
+    color: white;
+
+    border: 1px solid white;
+}
+
+.green-section button:hover {
+    background-color: white;
+
+    color: #006241;
+}
+
+
+/* ================= FOOTER NOTE ================= */
+
+.footer-note {
+    width: 700px;
+
+    max-width: 90%;
+
+    margin: 10px auto 35px;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color: #111;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    width: 88%;
+
+    margin: auto;
+
+    background-color: white;
+
+    border-top: 1px solid #ddd;
+
+    padding-top: 30px;
+}
+
+
+/* ================= FOOTER COLUMNS ================= */
+
+.footer-columns {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 30px;
+
+    padding-bottom: 30px;
+}
+
+
+/* FOOTER HEADING */
+
+.footer-column h3 {
+    font-size: 20px;
+
+    font-weight: normal;
+
+    margin-bottom: 30px;
+}
+
+
+/* FOOTER LINKS */
+
+.footer-column a {
+    display: block;
+
+    text-decoration: none;
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    margin-bottom: 25px;
+}
+
+.footer-column a:hover {
+    color: black;
+}
+
+
+/* ================= SOCIAL ICONS ================= */
+
+.social-icons {
+    border-top: 1px solid #ddd;
+
+    padding-top: 35px;
+
+    display: flex;
+
+    gap: 15px;
+}
+
+
+/* CIRCLE */
+
+.social-icons a {
+    width: 32px;
+
+    height: 32px;
+
+    border-radius: 50%;
+
+    background-color: #222;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-decoration: none;
+
+    font-size: 16px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+
+/* ================= BOTTOM FOOTER ================= */
+
+.footer-bottom {
+    margin-top: 35px;
+
+    padding-bottom: 30px;
+}
+
+
+/* LINKS */
+
+.footer-bottom a {
+    display: block;
+
+    color: black;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    margin-bottom: 22px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+
+/* COPYRIGHT */
+
+.footer-bottom p {
+    color: #666;
+
+    font-size: 14px;
+
+    margin-top: 35px;
+}
+
+

@@ -1,0 +1,142 @@
+
+/* Apply to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1e1e1e;
+}
+
+/* Header Section */
+header {
+    height: 128px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 48px;
+}
+
+/* Starbucks Logo */
+.logo img {
+    width: 76px;
+    height: 76px;
+    object-fit: contain;
+}
+
+/* Main Green Background */
+.main-section {
+    min-height: calc(100vh - 128px);
+    background-color: #006241;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 78px 20px 50px;
+}
+
+/* Forgot Password Box */
+.forgot-box {
+    width: 100%;
+    max-width: 775px;
+    background-color: white;
+    border-radius: 34px;
+    padding: 52px 9% 54px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Main Heading */
+.forgot-box h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 0 27px;
+}
+
+/* Description */
+.description {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 0 30px;
+}
+
+/* Email Input Group */
+.input-group {
+    position: relative;
+    width: 100%;
+}
+
+/* Email Label */
+.input-group label {
+    position: absolute;
+    top: -12px;
+    left: 12px;
+    padding: 0 6px;
+    background-color: white;
+    color: #00754a;
+    font-size: 18px;
+}
+
+/* Email Input */
+.input-group input {
+    width: 100%;
+    height: 63px;
+    border: 2px solid #00754a;
+    border-radius: 10px;
+    padding: 12px 15px;
+    font-size: 18px;
+    outline: none;
+}
+
+/* Email Input Focus */
+.input-group input:focus {
+    border-color: #00754a;
+}
+
+/* Send Code Button */
+.button-section {
+    text-align: center;
+    margin-top: 33px;
+}
+
+.button-section button {
+    background-color: #00754a;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    padding: 19px 27px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Button Hover Effect */
+.button-section button:hover {
+    background-color: #006241;
+}
+
+/* Remember Password Text */
+.remember-text {
+    text-align: center;
+    margin-top: 27px;
+    margin-bottom: 0;
+    font-size: 17px;
+}
+
+/* Remember Password Link */
+.remember-text a {
+    color: #00754a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Link Hover Effect */
+.remember-text a:hover {
+    text-decoration: underline;
+}
+

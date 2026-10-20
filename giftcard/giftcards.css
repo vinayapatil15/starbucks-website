@@ -1,0 +1,667 @@
+
+
+/* ================= HEADER ================= */
+
+header {
+    height: 115px;
+    width: 95%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding:10px 65px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 10;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* LOGO */
+
+.logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    display: block;
+}
+
+/* LEFT NAVIGATION */
+
+.left-header {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    gap: 40px;
+}
+
+.left-header a {
+    text-decoration: none;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.left-header a:hover {
+    color: #26734d;
+}
+
+/* RIGHT SIDE */
+
+.right-header {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.right-header a {
+    text-decoration: none;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.right-header a:hover {
+    color: #26734d;
+}
+
+/* ================= BUTTONS ================= */
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+/* SIGN IN AND JOIN BUTTONS */
+
+.sign-in,
+.join {
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sign-in {
+    background-color: white;
+    color: black;
+    border: 1px solid #4b4a4a;
+}
+
+.join {
+    background-color: #18251e;
+    color: white;
+    border: 1px solid #18251e;
+}
+
+.sign-in:hover,
+.join:hover {
+    transform: scale(1.03);
+}
+
+
+/*------gift card-section------*/
+
+        .giftcard-section{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            gap: 35px;
+            margin-top: 80px;
+            padding: 10px;
+        }
+        .received-card{
+            background-color: rgb(248, 248, 233);
+            width: 40%;
+            height: 190px;
+            padding: 25px;
+            border-radius: 30px;
+            line-height: 1.5;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+        }
+        .sent-card{
+            background-color: rgb(248, 248, 233);
+            width: 35%;
+            padding: 20px;
+            border-radius: 30px;
+            line-height: 1.5;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+
+        } 
+        .b1{
+            padding: 10px;
+            border-radius: 20px;
+            width: 120px;
+            border: 1px solid rgb(6, 93, 6);
+            color: rgb(6, 83, 6);
+            background-color: transparent;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .b2{
+            padding: 10px;
+            border-radius: 20px;
+            width: 120px;
+            border: 1px solid green;
+            color:white;
+            background-color:rgb(6, 76, 6);
+            font-size: 14px;
+        }
+        .b3{
+            padding: 10px;
+            border-radius: 20px;
+            width: 120px;
+            border: 1px solid rgb(6, 93, 6);
+            color: rgb(6, 83, 6);
+            background-color: transparent;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .giftcard-section .b3:hover{
+            background-color: #d5f9ce;
+        }
+        .giftcard-section .b1:hover{
+            background-color: #d8f5de;
+        }
+
+        /*------qustion section------*/
+
+        .qustion-section{
+            margin-top: 100px;
+            text-align: center;
+            word-spacing: 2px;
+            font-size: 19px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            letter-spacing:1px;
+        }
+        .qustion-section a{
+            color: rgb(26, 220, 26);
+            
+        }
+        .qustion-section a:hover{
+            text-decoration: none;
+        }
+
+        /*--------qustion answer-section------*/
+
+        details{
+            border-bottom: 1px solid #ddd;
+            padding: 25px 0;
+        
+        }
+        summary{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            list-style: none;
+            font-size: 22px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            word-spacing: 1.6;
+            letter-spacing: 2.1;
+        }
+        .qustion{
+            margin-left: 100px;
+            margin-top: 30px;
+        }
+        details p{
+            font-weight: 23px;
+            word-spacing: 2px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 19px;
+           
+        }
+    
+
+        /*------container-section----*/
+        .container{
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        text-align: center;
+        margin-left: 60px;
+        margin-right:60px;
+        margin-top: 150px;
+      }
+      img{
+        width: 80px;
+     }
+    .logo button{  
+        background-color: white;     
+        border:1px solid #006241;
+        border-radius: 50px;
+        padding:7px 16px;
+        color: #006241;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 40px;
+        font-weight: 600;  
+        cursor: pointer;  
+    }
+     .logo button:hover{
+        background-color: rgb(229, 240, 229);
+     }
+    #b2{
+        margin-top: 23px;
+    }
+    #b3{
+        margin-top: 9px;
+    }
+    #b4{
+        margin-top: 34px;
+    }
+
+    /*-----cards-section----*/
+    .giftcards h3{
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 1px; 
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .giftcards{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .giftcards img{
+        width: 250px;
+        height: 150px;
+        border-radius: 10px;
+        transition: 5s;
+        margin:10px;   
+        box-shadow: 0 5px 5px rgb(174, 171, 171); 
+        transform: translate(1.3);
+    }
+    .card{
+        display: flex;
+        overflow-x: auto;    
+    }
+    .giftcards img:hover{
+       
+       transform: translateY(-10px);
+       transition: 0.3s ease;
+
+    }
+
+    /*-------About gift-section------*/
+
+    .Aboutgift-section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 60px;
+        gap: 40px;
+        background-color: rgb(236, 235, 234);
+        padding: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      
+        
+    }
+    .Aboutgift-section h3{
+        font-size: 25px;
+    }
+    .Aboutgift-section button{
+        width: 300px;
+        padding: 5px;
+        border-radius: 27px;
+        border: 1px solid black;
+        font-weight: bold;
+        font-size: 17px;
+        background: transparent;
+        cursor: pointer;
+        padding: 5px;
+    }
+    .about-card button{
+        width: 150px;
+        padding: 5px;
+    }
+    .Aboutgift-section .about-card{
+        margin-left: 100px;
+        line-height: 1.5;
+    }
+    .Aboutgift-section .about-general{
+        margin-right: 100px;
+        line-height: 1.5;
+    }
+    .Aboutgift-section button:hover{
+        background-color:rgb(214, 214, 209);
+    }
+
+    
+        /* ================= FOOTER ================= */
+
+footer {
+    width: 88%;
+
+    margin: auto;
+
+    background-color: white;
+
+    border-top: 1px solid #ddd;
+
+    padding-top: 30px;
+}
+
+
+/* ================= FOOTER COLUMNS ================= */
+
+.footer-columns {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 30px;
+
+    padding-bottom: 30px;
+}
+
+
+/* FOOTER HEADING */
+
+.footer-column h3 {
+    font-size: 20px;
+
+    font-weight: normal;
+
+    margin-bottom: 30px;
+}
+
+
+/* FOOTER LINKS */
+
+.footer-column a {
+    display: block;
+
+    text-decoration: none;
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    margin-bottom: 25px;
+}
+
+.footer-column a:hover {
+    color: black;
+}
+
+
+/* ================= SOCIAL ICONS ================= */
+
+.social-icons {
+    border-top: 1px solid #ddd;
+
+    padding-top: 35px;
+
+    display: flex;
+
+    gap: 15px;
+}
+
+
+/* CIRCLE */
+
+.social-icons a {
+    width: 32px;
+
+    height: 32px;
+
+    border-radius: 50%;
+
+    background-color: #222;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-decoration: none;
+
+    font-size: 16px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+
+/* ================= BOTTOM FOOTER ================= */
+
+.footer-bottom {
+    margin-top: 35px;
+
+    padding-bottom: 30px;
+}
+
+
+/* LINKS */
+
+.footer-bottom a {
+    display: block;
+
+    color: black;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    margin-bottom: 22px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+
+/* COPYRIGHT */
+
+.footer-bottom p {
+    color: #666;
+
+    font-size: 14px;
+
+    margin-top: 35px;
+}
+
+
+        /*-----first-section-----*/
+
+        .first-section {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            gap: 20px;
+            background-color: #edf6f0;
+}
+
+/* Left and right image areas */
+        .left-emage,
+        .right-emage {
+            width: 30%;
+            height: 620px;
+            position: relative;
+            flex-shrink: 0;
+        }
+        .right-emage {
+            margin-right: 70px;
+        }
+        .left-emage{
+            margin-left: 50px;
+        }
+
+        .left-emage img,
+        .right-emage img {
+            display: block;
+            position: absolute;
+            width: 280px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+        }
+
+/* First left image */
+        .img1 img {
+            top: 10px;
+            left: 0;
+            transform: rotate(25deg);
+            z-index: 2;
+        }
+
+/* Second left image */
+        .img2 img {
+            top: 200px;
+            left: 0;
+            transform: rotate(-25deg);
+            z-index: 1;
+        }
+
+/* First right image */
+        .img3 img {
+            top: 10px;
+            right: 0;
+            transform: rotate(-25deg);
+            z-index: 1;
+        }
+
+/* Second right image */
+        .img4 img {
+            top: 200px;
+            right: 0;
+            transform: rotate(25deg);
+            z-index: 2;
+        }
+
+/* Center content */
+        .center-containt {
+            flex: 1;
+            min-width: 0;
+            max-width: 580px;
+            position: relative;
+            z-index: 3;
+}
+
+        .center-containt h4 {
+            font-size: 19px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+    
+}
+
+        .center-containt h1 {
+            font-size: 100px;
+            font-weight: 800;
+    
+    
+        }
+
+        .center-containt p {
+            font-size: 22px;
+    
+        }
+
+        .center-containt h3 {
+            font-size: 21px;
+            font-weight: 400;
+    
+        }
+
+        .center-containt a {
+            color: #006747;
+            text-decoration: underline;
+        }
+
+/* Cup logo */
+        .first-section .logo {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+    z-index: 4;
+}
+
+.first-section .logo img {
+    display:  block;
+    width: 60px;
+    height: auto;
+    border-radius: 0;
+}
+
+
+/* Reduce gaps between images and center content */
+.first-section {
+    padding: 40px;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+/* Bring side images closer to center */
+.left-emage,
+.right-emage {
+    width: 29%;
+    height: 620px;
+}
+
+/* Slightly reduce image size */
+.left-emage img,
+.right-emage img {
+    width: 300px;
+    max-width: 100%;
+}
+
+/* Adjust left cards */
+.img1 img {
+    left: 15px;
+    
+}
+
+.img2 img {
+    left: 15px;
+    
+}
+
+/* Adjust right cards */
+.img3 img {
+    right: 15px;
+   
+}
+
+.img4 img {
+    right: 15px;
+}
+
+/* Give center content more room */
+.center-containt {
+    flex: 1;
+    max-width: 570px;
+    min-width: 0;
+}
+
+.center-containt h1 {
+    font-size: 56px;
+}
+
+.center-containt p {
+    font-size: 21px;
+    
+   
+}
+
+/* Prevent horizontal scrolling */
+body {
+    overflow-x: hidden;
+}
+
+      

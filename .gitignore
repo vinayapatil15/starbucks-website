@@ -1,0 +1,4 @@
+conn.php
+.env
+.env.*
+!.env.example

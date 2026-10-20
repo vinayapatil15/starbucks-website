@@ -1,0 +1,298 @@
+
+/* ================= GENERAL CSS ================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    color: #222;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    height: 115px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 65px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 10;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* LOGO */
+
+.logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    display: block;
+}
+
+/* LEFT NAVIGATION */
+
+.left-header {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    gap: 40px;
+}
+
+.left-header a {
+    text-decoration: none;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.left-header a:hover {
+    color: #26734d;
+}
+
+/* RIGHT SIDE */
+
+.right-header {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.right-header a {
+    text-decoration: none;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.right-header a:hover {
+    color: #26734d;
+}
+
+/* ================= BUTTONS ================= */
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+/* SIGN IN AND JOIN BUTTONS */
+
+.sign-in,
+.join {
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sign-in {
+    background-color: white;
+    color: black;
+    border: 1px solid #4b4a4a;
+}
+
+.join {
+    background-color: #18251e;
+    color: white;
+    border: 1px solid #18251e;
+}
+
+.sign-in:hover,
+.join:hover {
+    transform: scale(1.03);
+}
+
+/* ================= HEAD NAVIGATION ================= */
+
+.head-nav {
+    width: 100%;
+    min-height: 85px;
+    background-color: #fcfbfb;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 2px lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVIGATION LINKS */
+
+.head-nav nav {
+    margin-left: 135px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.head-nav a {
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.head-nav a:hover {
+    color: #26734d;
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero {
+    margin-left: 400px;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero h1 {
+    font-size: 25px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: rgb(98, 97, 97);
+    margin-bottom: 20px;
+}
+
+/* HERO BUTTONS */
+
+.hero-buttons {
+    margin: 20px;
+    margin-left: 20px;
+}
+
+.hero-buttons button {
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    width: 88%;
+    margin: auto;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    padding-top: 30px;
+}
+
+/* FOOTER COLUMNS */
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+/* FOOTER HEADING */
+
+.footer-column h3 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+/* FOOTER LINKS */
+
+.footer-column a {
+    display: block;
+    text-decoration: none;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.footer-column a:hover {
+    color: black;
+}
+
+/* SOCIAL ICONS */
+
+.social-icons {
+    border-top: 1px solid #ddd;
+    padding-top: 35px;
+    display: flex;
+    gap: 15px;
+}
+
+/* SOCIAL ICON CIRCLES */
+
+.social-icons a {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+/* BOTTOM FOOTER */
+
+.footer-bottom {
+    margin-top: 35px;
+    padding-bottom: 30px;
+}
+
+/* BOTTOM FOOTER LINKS */
+
+.footer-bottom a {
+    display: block;
+    color: rgb(40, 40, 40);
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 22px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* COPYRIGHT */
+
+.footer-bottom p {
+    color: #666;
+    font-size: 14px;
+    margin-top: 35px;
+}
+
+/* GREEN FOOTER BOX */
+
+.Footer-box {
+    background-color: #173d2a;
+    padding: 35px;
+}
+
+.Footer-box a {
+    color: white;
+    text-decoration: none;
+    margin-left: 250px;
+    font-size: 20px;
+}
+

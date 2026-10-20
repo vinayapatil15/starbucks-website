@@ -1,0 +1,386 @@
+
+/* ================= GENERAL CSS ================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body.menu-page {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    color: #222;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    height: 115px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 65px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 10;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* LOGO */
+
+.logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    display: block;
+}
+
+/* LEFT NAVIGATION */
+
+.left-header {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    gap: 40px;
+}
+
+.left-header a {
+    text-decoration: none;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.left-header a:hover {
+    color: #26734d;
+}
+
+/* RIGHT SIDE */
+
+.right-header {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.right-header a {
+    text-decoration: none;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.right-header a:hover {
+    color: #26734d;
+}
+
+/* ================= BUTTONS ================= */
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+/* SIGN IN AND JOIN BUTTONS */
+
+.sign-in,
+.join {
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sign-in {
+    background-color: white;
+    color: black;
+    border: 1px solid #4b4a4a;
+}
+
+.join {
+    background-color: #18251e;
+    color: white;
+    border: 1px solid #18251e;
+}
+
+.sign-in:hover,
+.join:hover {
+    transform: scale(1.03);
+}
+
+/* ================= HEAD NAVIGATION ================= */
+
+.head-nav {
+    width: 100%;
+    min-height: 85px;
+    background-color: #fcfbfb;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 2px lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVIGATION LINKS */
+
+.head-nav nav {
+    margin-left: 135px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.head-nav a {
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.head-nav a:hover {
+    color: #26734d;
+}
+
+/* ================= MENU TOP BAR ================= */
+
+.menu-top {
+    height: 90px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 10;
+}
+
+.menu-top h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.order-btn {
+    background: #006241;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.order-btn:hover {
+    background: #004d33;
+}
+
+/* ================= PAGE LAYOUT ================= */
+
+.menu-layout {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* LEFT SIDEBAR */
+
+.menu-sidebar {
+    width: 250px;
+    padding: 35px 20px 50px 10px;
+    flex-shrink: 0;
+}
+
+.menu-sidebar h3 {
+    font-size: 22px;
+    margin: 0 0 20px;
+}
+
+.menu-sidebar h4 {
+    font-size: 15px;
+    margin: 25px 0 8px;
+}
+
+.menu-sidebar a {
+    display: block;
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 9px 0;
+}
+
+.menu-sidebar a:hover {
+    color: #006241;
+}
+
+/* RIGHT CONTENT */
+
+.menu-content {
+    flex: 1;
+    padding: 35px 30px 60px;
+}
+
+.menu-section {
+    padding-bottom: 45px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #ddd;
+    scroll-margin-top: 110px;
+}
+
+.menu-section h2 {
+    font-size: 24px;
+    margin: 0 0 28px;
+}
+
+/* ================= PRODUCT GRID ================= */
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px 25px;
+}
+
+.menu-card {
+    text-align: center;
+}
+
+.menu-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.menu-card h3 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.4;
+    margin: 15px auto 0;
+    max-width: 180px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    width: 88%;
+    margin: auto;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    padding-top: 30px;
+}
+
+/* FOOTER COLUMNS */
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+/* FOOTER HEADING */
+
+.footer-column h3 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+/* FOOTER LINKS */
+
+.footer-column a {
+    display: block;
+    text-decoration: none;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.footer-column a:hover {
+    color: black;
+}
+
+/* SOCIAL ICONS */
+
+.social-icons {
+    border-top: 1px solid #ddd;
+    padding-top: 35px;
+    display: flex;
+    gap: 15px;
+}
+
+/* SOCIAL ICON CIRCLES */
+
+.social-icons a {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+/* BOTTOM FOOTER */
+
+.footer-bottom {
+    margin-top: 35px;
+    padding-bottom: 30px;
+}
+
+/* BOTTOM FOOTER LINKS */
+
+.footer-bottom a {
+    display: block;
+    color: rgb(40, 40, 40);
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 22px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* COPYRIGHT */
+
+.footer-bottom p {
+    color: #666;
+    font-size: 14px;
+    margin-top: 35px;
+}
+
+/* GREEN FOOTER BOX */
+
+.Footer-box {
+    background-color: #173d2a;
+    padding: 35px;
+}
+
+.Footer-box a {
+    color: white;
+    text-decoration: none;
+    margin-left: 250px;
+    font-size: 20px;
+}
+
